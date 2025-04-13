@@ -108,8 +108,6 @@ Medium-To-React-App/
 - Improve error handling for API calls.
 - Add unit tests for components.
 
-In the project directory, you can run:
-
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.
