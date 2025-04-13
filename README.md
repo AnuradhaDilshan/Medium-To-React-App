@@ -114,7 +114,7 @@ In the project directory, you can run:
 
 This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.
 
-[![License](https://img.shields.io/github/license/AnuradhaDilshan/Medium-To-React-App)](./LICENSE)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 ![Last Commit](https://img.shields.io/github/last-commit/AnuradhaDilshan/Medium-To-React-App)
 ![Repo Size](https://img.shields.io/github/repo-size/AnuradhaDilshan/Medium-To-React-App)
 ![Top Language](https://img.shields.io/github/languages/top/AnuradhaDilshan/Medium-To-React-App)
