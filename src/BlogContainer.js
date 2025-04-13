@@ -11,7 +11,6 @@ const BlogContainer = () => {
       .then((res) => res.json())
       .then((data) => {
         setMyBlog(data);
-        // console.log(data)
       });
   }, [rss2json]);
 
