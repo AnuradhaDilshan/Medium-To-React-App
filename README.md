@@ -1,70 +1,110 @@
-# Getting Started with Create React App
+# Medium To React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a React-based web application that fetches and displays blog posts from a Medium RSS feed using the `rss2json` API. It is designed to showcase Medium blog posts in a portfolio-style layout.
 
-## Available Scripts
+Medium doesn’t offer a public API that allows you to read stories, but you can view any blog or publication through an RSS feed.
+
+- **Example Feed**:
+  Replace the username after `/feed/` with your own to see your endpoint.
+
+  ```bash
+  https://medium.com/feed/@anuradha.dilshan
+  ```
+
+- **Navigate to rss2json**:  
+   Open the [rss2json](https://rss2json.com/) website in your browser.
+
+- **Convert RSS to JSON**:
+  Paste your RSS feed URL into the text field on the `rss2json` website.
+  Click the `Convert to JSON` button.
+
+- **Copy the API Endpoint**:  
+   After conversion, you will see a new web address under **API call**.  
+   Copy this URL — it will be your new JSON endpoint.
+
+- **Use the JSON Endpoint in Your Project**:  
+   Replace the placeholder URL in your project with the new JSON endpoint. For example:
+
+  ```javascript
+  const rss2json =
+    "https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fmedium.com%2Ffeed%2F%40anuradha.dilshan";
+  ```
+
+Now your application will fetch Medium blog posts in JSON format using the `rss2json` API.
+
+## Features
+
+- **Fetch Medium Blog Posts**: Uses the `rss2json` API to fetch blog posts from a Medium RSS feed.
+- **Dynamic Blog Tiles**: Displays blog posts dynamically in a responsive grid layout.
+- **Content Parsing**: Extracts and cleans blog content, including images and text, for display.
+- **Responsive Design**: Styled with CSS to ensure compatibility across devices.
+
+## File Structure
+
+The project structure is as follows:
+
+```bash
+Medium-To-React-App/
+├── .gitignore
+├── package.json
+├── README.md
+├── public/
+│   ├── favicon.ico
+│   ├── index.html
+│   ├── logo192.png
+│   ├── logo512.png
+│   ├── manifest.json
+│   └── robots.txt
+├── src/
+│   ├── App.css
+│   ├── App.js
+│   ├── BlogContainer.js
+│   ├── BlogTile.js
+│   ├── index.css
+│   └── index.js
+```
+
+## How to Run the Project
+
+### Prerequisites
+
+- Node.js (v16 or higher)
+- npm or yarn
+
+### Steps
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/AnuradhaDilshan/Medium-To-React-App.git
+   cd Medium-To-React-App
+   ```
+
+2. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+3. Running the Project
+
+- To start the development server, run:
+
+  ```bash
+  npm start
+  ```
+
+- Open http://localhost:3000 in your browser to view the app.
+
+## Future Enhancements
+
+- Add pagination for blog posts.
+- Implement search functionality.
+- Improve error handling for API calls.
+- Add unit tests for components.
 
 In the project directory, you can run:
 
-### `npm start`
+## License
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is licensed under the MIT License. See the `LICENSE` file for details.
