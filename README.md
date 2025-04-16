@@ -50,9 +50,6 @@ The project structure is as follows:
 
 ```bash
 Medium-To-React-App/
-├── .gitignore
-├── package.json
-├── README.md
 ├── public/
 │   ├── favicon.ico
 │   ├── index.html
@@ -67,6 +64,10 @@ Medium-To-React-App/
 │   ├── BlogTile.js
 │   ├── index.css
 │   └── index.js
+├── .gitignore
+├── LICENSE
+├── package.json
+└── README.md
 ```
 
 ## How to Run the Project
