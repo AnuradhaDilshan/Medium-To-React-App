@@ -93,7 +93,7 @@ Medium-To-React-App/
    npm install
    ```
 
-3. Running the Project
+3. Running the Project:
 
 - To start the development server, run:
 
