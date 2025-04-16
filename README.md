@@ -66,6 +66,7 @@ Medium-To-React-App/
 │   └── index.js
 ├── .gitignore
 ├── LICENSE
+├── package-lock.json
 ├── package.json
 └── README.md
 ```
